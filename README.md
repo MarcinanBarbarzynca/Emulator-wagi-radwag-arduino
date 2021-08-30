@@ -11,6 +11,7 @@ C0
 C1
 NR
 Wagi wymagają aby komunikat zawierał @CRLF
+Wagę nieustaloną drukuje ze znakiem zapytania 'SI        0.476 kg' 
 
 # Efekty komend:
 1. PC - Drukuje wszystkie implementowane komendy 'PC A ",SUI,CU1,CU0,ODH,OUH,IC1,IC0,TZ,SI,SU,C1,C0,DH,UH,OT,UT,SM,K1,K0,BP,IC,SS,NB,BN,FS,RV,UI,US,UG,PC,Z,T,S,A"'
