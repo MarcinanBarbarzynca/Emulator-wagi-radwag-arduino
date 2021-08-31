@@ -27,21 +27,21 @@ void loop() {
   if (Serial.available() > 0) {
     String wiadomosc = Serial.readString();
     if (wiadomosc == "C1\r\n") {
-      Serial.println("C1\r\n");
+      Serial.println("C1 A\r\n");
       nadawanie_non_stop = true;
     }
     if (wiadomosc == "C0\r\n") {
-      Serial.println("C0\r\n");
+      Serial.println("C0 A\r\n");
       nadawanie_non_stop = false;
     }
-    if (wiadomosc == "NR\r\n") {
-      Serial.println("ID: 999999");
+    if (wiadomosc == "NB\r\n") {
+      Serial.println("NB A "999999");
     }
     if (wiadomosc == "?") {
-      Serial.println("Komendy: C0@CRLF; C1@CRLF;  NR@CRLF");
+      Serial.println("Komendy: C0@CRLF; C1@CRLF;  NB@CRLF");
     }
     if (wiadomosc == "?\r\n") {
-      Serial.println("Komendy: C0@CRLF; C1@CRLF;  NR@CRLF");
+      Serial.println("Komendy: C0@CRLF; C1@CRLF;  NB@CRLF");
     }
   }
 }
