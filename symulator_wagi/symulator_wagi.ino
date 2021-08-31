@@ -35,7 +35,7 @@ void loop() {
       nadawanie_non_stop = false;
     }
     if (wiadomosc == "NB\r\n") {
-      Serial.println("NB A "999999");
+      Serial.println("NB A \"999999\"\r\n");
     }
     if (wiadomosc == "?") {
       Serial.println("Komendy: C0@CRLF; C1@CRLF;  NB@CRLF");
