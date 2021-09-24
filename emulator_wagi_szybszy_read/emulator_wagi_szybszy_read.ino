@@ -7,11 +7,12 @@ unsigned long previousMillis = 0;
 
 bool nadawanie_non_stop = true;
 void print_random() {
- float random_float = random(0, 15000)/1000;
+ int random_float = random(0, 15);
+ int random_ndpart = random(0, 999);
  if(random(0,10000)>5000){
-   Serial.print("SI \t "+String(random(0, 10000)) + " kg \r\n"); //Wypisuje randomową wartość
+   Serial.print("SI "+String(random_float)+"."+ String(random_ndpart)+ " kg \r\n"); //Wypisuje randomową wartość
  }else{
-   Serial.print("SI \t ? "+String(random(0, 10000)) + " kg \r\n"); //Wypisuje randomową wartość
+   Serial.print("SI ? "+String(random_float) +"."+ String(random_ndpart)+ " kg \r\n"); //Wypisuje randomową wartość
  }
  
 }
