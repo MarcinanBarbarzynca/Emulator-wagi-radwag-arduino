@@ -7,7 +7,7 @@ unsigned long previousMillis = 0;
 
 bool nadawanie_non_stop = true;
 void print_random() {
-  Serial.print("SI : "+String(random(0, 10000)) + "\r\n"); //Wypisuje randomową wartość
+  Serial.print("SI : "+String(random(0, 10000)) + " kg\r\n"); //Wypisuje randomową wartość
 }
 
 void setup() {
